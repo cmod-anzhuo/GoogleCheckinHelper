@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="lp_auto_check_interval">設置定時更新周期</string>
+	<string name="lp_no_selected">未選擇</string>
+	<string name="cbp_auto_check">啟用/關閉自動更新</string>
+	<string name="disable_auto_check">自動更新已關閉</string>
+	<string name="enable_auto_check">自動更新已開啟</string>
+	<string name="hint_check_now">更新進程將在後台自動運行</string>
+	<string name="notification_update_finish_title">更新已完成</string>
+	<string name="notification_no_update">已是最新配置，無需更新。 </string> 
+	<string name="notification_update_successfully">已成功更新配置，重啟手機後即可正常登錄Google服務。 </string> 
+	<string name="notification_update_failed">連接失敗，請檢查您的網絡連接，稍後重試。 </string> 
+	<string name="menu_about">關於</string> 
+	<string name="about_title">關於Google服務連接助手</string> 
+	<string name="about_content">版本： %s\n支持社區\nhttp://www.HiAPK.com</string> 
+	<string name="not_defined_hiap_rom">對不起，此程序只適用於Hiapk ROM。 </string> 
+	<string name="p_check_now_summary">立即檢查更新</string> 
+	<string name="p_check_now_title">點擊開始檢查更新</string> 
+	<string name="help_tip_1">當您無法登錄Google服務時，請點擊以下按鈕</string> 
+	<string name="help_btn_text">幫我連接Google服務</string> 
+	<string name="help_tip_2">注：點擊前請確認您的手機已聯網</string> 
+	<string name="help_settings">設置</string> 
+	<string name="btnRebootNow">立即重啟</string> 
+	<string name="btnRebootLater">稍後重啟</string>
+	<string name="app_name">Google服務連接助手</string>
+	<string-array name="entry_alarm_interval">
+		<item>每天</item>
+		<item>每週</item>
+		<item>每月</item>
+	</string-array>
+	<string name="rollback_btn_text">還原Google服務連接設置</string>
+	<string name="rollback_fail">還原連接設置失敗</string>
+	<string name="rollback_success">Google服務連接設置已還原</string>
+	<string name="rollback_not_need">未檢測到設置，無需還原</string>
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<Preference android:key="check_host" android:title="更新 Host 信息"
+		android:summary="当 Google 服务无法正常使用时，请尝试联网更新 Host" />
+	<Preference android:key="roll_back" android:title="还原设置"
+		android:summary="还原默认 Host 信息" />
+	<CheckBoxPreference android:summaryOn="@string/enable_auto_check"
+		android:defaultValue="True" android:summaryOff="@string/disable_auto_check"
+		android:key="key_cbp_auto_check" android:title="@string/cbp_auto_check"
+		android:persistent="true"></CheckBoxPreference>
+	<ListPreference android:key="key_lp_choseinterval"
+		android:dialogTitle="Set auto-check Interval" android:title="@string/lp_auto_check_interval"
+		android:dependency="key_cbp_auto_check" android:entries="@array/entry_alarm_interval"
+		android:entryValues="@array/entriesVal_alarm_interval"
+		android:defaultValue="@string/alarm_interval_default"
+		android:persistent="true"></ListPreference>
+</PreferenceScreen>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.hiapk.googlecheckinhelper" android:sharedUserId="android.uid.system"
+	android:versionCode="2" android:versionName="1.2">
+	<application android:icon="@drawable/icon" android:label="@string/app_name">
+		<activity android:name=".HelpMeActivity">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN"></action>
+				<!--  <category android:name="android.intent.category.LAUNCHER"></category> -->
+			</intent-filter>
+		</activity>
+		
+		<activity android:name=".UpdateHostsPreferencesAct">
+			<intent-filter>
+				<action android:name="com.hiapk.googlecheckinhelper.UpdateHostsPreferencesAct"></action>
+			</intent-filter>
+		</activity>
+		
+		<activity android:name=".CheckPopupAct" android:theme="@android:style/Theme.Dialog">
+			<intent-filter>
+				<action android:name="com.hiapk.googlecheckinhelper.CheckPopupAct"></action>
+			</intent-filter>
+		</activity>
+
+		<receiver android:name=".CheckHostsReceiver">
+			<intent-filter>
+				<action android:name="com.hiapk.googlecheckinhelper.action.checkhosts"></action>
+				<action android:name="android.intent.action.BOOT_COMPLETED"></action>
+			</intent-filter>
+		</receiver>
+	</application>
+	<uses-sdk android:minSdkVersion="3" />
+
+<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"></uses-permission>
+<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+<uses-permission android:name="android.permission.REBOOT"></uses-permission>
+</manifest> 
